@@ -311,6 +311,13 @@ select {
     transform: scale(1.5);
 }
 
+.number-indicators > button {
+    background-color: transparent;
+    color: hsl(var(--clr-white));
+    border: 1px solid hsl(var(--clr-light) / 0.2);
+    border-radius: 50%;
+}
+
 /* primary-header */
 
 .logo {
