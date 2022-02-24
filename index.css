@@ -310,12 +310,30 @@ select {
     opacity: 1;
     transform: scale(1.5);
 }
+.number-indicators {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-evenly;
+}
 
 .number-indicators > button {
     background-color: transparent;
     color: hsl(var(--clr-white));
     border: 1px solid hsl(var(--clr-light) / 0.2);
     border-radius: 50%;
+    aspect-ratio: 1;
+    height: 4em;
+}
+
+.number-indicators > button:hover {
+    border: 1px solid hsl(var(--clr-white));
+    cursor: pointer;
+}
+
+.number-indicators > [aria-selected="true"] {
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-dark));
 }
 
 /* primary-header */
@@ -700,4 +718,32 @@ body {
         max-width: 100%;
         grid-column: span 2;
     }
+}
+
+/* technology layout */
+.technology {
+    width: 100%;
+}
+
+.grid-container--technology {
+    width: 100%;
+    --flow-space: 2rem;
+    grid-template-areas:
+        "title"
+        "image"
+        "tabs"
+        "content";
+}
+
+.grid-container--technology > picture {
+    grid-area: image;
+    width: 110%;
+}
+
+.grid-container--technology > .number-indicators {
+    grid-area: tabs;
+}
+
+.grid-container--technology > article {
+    grid-area: content;
 }

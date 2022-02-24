@@ -25,7 +25,7 @@
         <script src="tabs.js" defer></script>
     </head>
 
-    <body class="crew">
+    <body class="technology">
         <a class="skip-to-content" href="#main">Skip to content</a>
         <header class="primary-header flex">
             <div>
@@ -79,12 +79,12 @@
             </nav>
         </header>
 
-        <main id="main" class="grid-container grid-container--crew flow">
+        <main id="main" class="grid-container grid-container--technology flow">
             <h1 class="numbered-title">
                 <span aria-hidden="true">03</span> Space Launch 101
             </h1>
 
-            <div class="grid number-indicators">
+            <div class="number-indicators">
                 <button aria-selected="true">1</button>
                 <button aria-selected="false">2</button>
                 <button aria-selected="false">3</button>
@@ -98,10 +98,12 @@
                 tabindex="0"
             >
                 <header class="flow flow--space-small">
-                    <h2 class="fs-600 ff-serif uppercase">THE TERMINOLOGY…</h2>
+                    <h2 class="fs-600 ff-serif uppercase text-accent">
+                        THE TERMINOLOGY…
+                    </h2>
                     <p class="fs-700 uppercase ff-serif">LAUNCH VEHICLE</p>
                 </header>
-                <p>
+                <p class="text-accent">
                     A launch vehicle or carrier rocket is a rocket-propelled
                     vehicle used to carry a payload from Earth's surface to
                     space, usually to Earth orbit or beyond. Our WEB-X carrier
@@ -113,11 +115,13 @@
 
             <picture>
                 <source
-                    srcset="assets\technology\image-launch-vehicle-portrait.jpg"
+                    srcset="
+                        assets\technology\image-launch-vehicle-landscape.jpg
+                    "
                     type="image/webp"
                 />
                 <img
-                    src="assets\technology\image-launch-vehicle-portrait.jpg"
+                    src="assets\technology\image-launch-vehicle-landscape.jpg"
                     alt="Douglas Hurley"
                 />
             </picture>
