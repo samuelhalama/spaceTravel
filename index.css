@@ -747,3 +747,21 @@ body {
 .grid-container--technology > article {
     grid-area: content;
 }
+
+.grid-container--technology > article > header > h2 {
+    font-size: var(--fs-600);
+}
+
+@media (min-width: 35em) {
+    .number-indicators {
+        width: 50%;
+    }
+
+    .grid-container--technology > article > header > h2 {
+        font-size: var(--fs-400);
+    }
+
+    .grid-container--technology > article {
+        width: 80%;
+    }
+}
